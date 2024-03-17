@@ -1,6 +1,7 @@
 const parent = document.querySelector(".grid");
 const slider = document.querySelector(".slider");
 const reset = document.querySelector(".reset");
+const color = document.querySelector(".color");
 let isdraw = false;
 function start() {
   gridmake(600 / 16, slider.value);
@@ -47,9 +48,10 @@ function start() {
     });
 
     draw = (pixel) => {
+      colorPick = color.value;
       pixel.setAttribute(
         "style",
-        `background-color:blue;width:${density}px;height:${density}px`
+        `background-color:${colorPick};width:${density}px;height:${density}px`
       );
     };
   }

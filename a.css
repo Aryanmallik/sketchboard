@@ -2,6 +2,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: aquamarine;
+  /* background-image: url("./1_yQeeD9gkMLIkykEyNyPOWA.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 .grid {
   background-color: white;
@@ -13,3 +17,10 @@ body {
 /* .col {
   border: 1px solid grey;
 } */
+.reset {
+}
+.select {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}

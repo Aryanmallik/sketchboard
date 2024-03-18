@@ -2,12 +2,12 @@ const parent = document.querySelector(".grid");
 const slider = document.querySelector(".slider");
 const reset = document.querySelector(".reset");
 const color = document.querySelector(".color");
-let isdraw = false;
+const rangeVal = document.querySelector(".rangeVal");
 parent.ondragstart = function () {
   return false;
 };
 function start() {
-  gridmake(slider.value);
+  gridmake(16);
   slider.addEventListener("mouseup", () => {
     const slider = document.querySelector(".slider");
     let size = slider.value;
@@ -16,6 +16,7 @@ function start() {
   });
 
   function gridmake(size) {
+    rangeVal.innerHTML = `${size}x${size}`;
     parent.innerHTML = "";
     for (let i = 0; i < size; i++) {
       let row = document.createElement("div");

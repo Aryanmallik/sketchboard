@@ -1,11 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: aquamarine;
-  /* background-image: url("./1_yQeeD9gkMLIkykEyNyPOWA.jpg");
+  background-image: url("./Pixel_Art_Background.jpg");
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
+  color: white;
+}
+h1 {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 .grid {
   background-color: white;
@@ -31,13 +39,31 @@ body {
 }
 .container {
   display: flex;
-  box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.76);
+  box-shadow: 0px 0px 9px 4px white;
   border-radius: 2px;
   width: 600px;
   height: 600px;
-  flex-wrap: wrap;
-  margin: 5px;
+  margin-bottom: 15px;
 }
 .col:hover {
   background-color: #707070b6;
+}
+.ranger {
+  display: flex;
+  flex-direction: column;
+  color: red;
+  align-items: center;
+}
+.reset {
+  background-color: transparent;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  border: 2px solid grey;
+}
+.reset:hover {
+  background-color: grey;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
